@@ -1,0 +1,956 @@
+<!DOCTYPE html>
+<html lang="lt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalendorius-2023</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main>
+        <h1 class="title">Nedarbo dienų kalendorius <span class="text-green">2023 m.</span></h1>
+        <ol class="calendar">
+            <li class="month">
+                <div class="shadow">
+                    <table class="month-table">
+                        <caption class="month-name">Sausis</caption>
+                        <thead class="month-head">
+                            <tr class="week-days">
+                                <th class="week-day">Pr</th>
+                                <th class="week-day">An</th>
+                                <th class="week-day">Tr</th>
+                                <th class="week-day">Ke</th>
+                                <th class="week-day">Pe</th>
+                                <th class="week-day">Še</th>
+                                <th class="week-day">Se</th>
+                            </tr>
+                        </thead>
+                        <tbody class="month-body">
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day holiday-day" title="Naujieji metai">1</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">2</td>
+                                <td class="day">3</td>
+                                <td class="day">4</td>
+                                <td class="day">5</td>
+                                <td class="day">6</td>
+                                <td class="day">7</td>
+                                <td class="day">8</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">9</td>
+                                <td class="day">10</td>
+                                <td class="day">11</td>
+                                <td class="day">12</td>
+                                <td class="day current-day" title="KALENDORIUS sukurtas">13</td>
+                                <td class="day">14</td>
+                                <td class="day">15</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">16</td>
+                                <td class="day">17</td>
+                                <td class="day">18</td>
+                                <td class="day">19</td>
+                                <td class="day">20</td>
+                                <td class="day">21</td>
+                                <td class="day">22</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">23</td>
+                                <td class="day">24</td>
+                                <td class="day">25</td>
+                                <td class="day">26</td>
+                                <td class="day">27</td>
+                                <td class="day">28</td>
+                                <td class="day">29</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">30</td>
+                                <td class="day">31</td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="month-footer">
+                    <p class="month-footer-text">01-01 <span class="text-green"> Naujieji metai</span></p>
+                </div>
+            </li>
+            <li class="month">
+                <div class="shadow">
+                    <table class="month-table">
+                        <caption class="month-name">Vasaris</caption>
+                        <thead class="month-head">
+                            <tr class="week-days">
+                                <th class="week-day">Pr</th>
+                                <th class="week-day">An</th>
+                                <th class="week-day">Tr</th>
+                                <th class="week-day">Ke</th>
+                                <th class="week-day">Pe</th>
+                                <th class="week-day">Še</th>
+                                <th class="week-day">Se</th>
+                            </tr>
+                        </thead>
+                        <tbody class="month-body">
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day">1</td>
+                                <td class="day">2</td>
+                                <td class="day">3</td>
+                                <td class="day">4</td>
+                                <td class="day">5</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">6</td>
+                                <td class="day">7</td>
+                                <td class="day">8</td>
+                                <td class="day">9</td>
+                                <td class="day">10</td>
+                                <td class="day">11</td>
+                                <td class="day">12</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">13</td>
+                                <td class="day">14</td>
+                                <td class="day">15</td>
+                                <td class="day holiday-day" title="Lietuvos Valstybės atkūrimo diena">16</td>
+                                <td class="day">17</td>
+                                <td class="day">18</td>
+                                <td class="day">19</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">20</td>
+                                <td class="day celeb-working-day" title="Užgavėnės">21</td>
+                                <td class="day">22</td>
+                                <td class="day">23</td>
+                                <td class="day">24</td>
+                                <td class="day">25</td>
+                                <td class="day">26</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">27</td>
+                                <td class="day">28</td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="month-footer">
+                    <p class="month-footer-text">03-16 <span class="text-green">Lietuvos Valstybės atkūrimo diena</span></p>
+                    <p class="month-footer-text border-grey">02-21 <span class="text-green">Užgavėnės</span></p>
+                </div>
+            </li>
+            <li class="month">
+                <div class="shadow">
+                    <table class="month-table">
+                        <caption class="month-name">Kovas</caption>
+                        <thead class="month-head">
+                            <tr class="week-days">
+                                <th class="week-day">Pr</th>
+                                <th class="week-day">An</th>
+                                <th class="week-day">Tr</th>
+                                <th class="week-day">Ke</th>
+                                <th class="week-day">Pe</th>
+                                <th class="week-day">Še</th>
+                                <th class="week-day">Se</th>
+                            </tr>
+                        </thead>
+                        <tbody class="month-body">
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day">1</td>
+                                <td class="day">2</td>
+                                <td class="day">3</td>
+                                <td class="day">4</td>
+                                <td class="day">5</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">6</td>
+                                <td class="day">7</td>
+                                <td class="day">8</td>
+                                <td class="day">9</td>
+                                <td class="day">10</td>
+                                <td class="day holiday-day" title="Nepriklausomybės atkūrimo diena">11</td>
+                                <td class="day">12</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">13</td>
+                                <td class="day">14</td>
+                                <td class="day">15</td>
+                                <td class="day">16</td>
+                                <td class="day">17</td>
+                                <td class="day">18</td>
+                                <td class="day">19</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">20</td>
+                                <td class="day">21</td>
+                                <td class="day">22</td>
+                                <td class="day">23</td>
+                                <td class="day">24</td>
+                                <td class="day">25</td>
+                                <td class="day">26</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">27</td>
+                                <td class="day">28</td>
+                                <td class="day">29</td>
+                                <td class="day">30</td>
+                                <td class="day">31</td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="month-footer">
+                    <p class="month-footer-text">03-11 <span class="text-green">Nepriklausomybės atkūrimo diena</span></p>
+                </div>
+            </li>
+            <li class="month">
+                <div class="shadow">
+                    <table class="month-table">
+                        <caption class="month-name">Balandis</caption>
+                        <thead class="month-head">
+                            <tr class="week-days">
+                                <th class="week-day">Pr</th>
+                                <th class="week-day">An</th>
+                                <th class="week-day">Tr</th>
+                                <th class="week-day">Ke</th>
+                                <th class="week-day">Pe</th>
+                                <th class="week-day">Še</th>
+                                <th class="week-day">Se</th>
+                            </tr>
+                        </thead>
+                        <tbody class="month-body">
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day">1</td>
+                                <td class="day">2</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">3</td>
+                                <td class="day">4</td>
+                                <td class="day">5</td>
+                                <td class="day">6</td>
+                                <td class="day">7</td>
+                                <td class="day">8</td>
+                                <td class="day holiday-day" title="Velykos">9</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day holiday-day" title="Velykų antroji diena">10</td>
+                                <td class="day">11</td>
+                                <td class="day">12</td>
+                                <td class="day">13</td>
+                                <td class="day">14</td>
+                                <td class="day">15</td>
+                                <td class="day">16</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">17</td>
+                                <td class="day">18</td>
+                                <td class="day">19</td>
+                                <td class="day">20</td>
+                                <td class="day">21</td>
+                                <td class="day">22</td>
+                                <td class="day">23</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">24</td>
+                                <td class="day">25</td>
+                                <td class="day">26</td>
+                                <td class="day">27</td>
+                                <td class="day">28</td>
+                                <td class="day">29</td>
+                                <td class="day">30</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="month-footer">
+                    <p class="month-footer-text">04-09 <span class="text-green">Velykos</span></p>
+                    <p class="month-footer-text">04-10 <span class="text-green">Velykų antroji diena</span></p>
+                </div>
+            </li>
+            <li class="month">
+                <div class="shadow">
+                    <table class="month-table">
+                        <caption class="month-name">Gegužė</caption>
+                        <thead class="month-head">
+                            <tr class="week-days">
+                                <th class="week-day">Pr</th>
+                                <th class="week-day">An</th>
+                                <th class="week-day">Tr</th>
+                                <th class="week-day">Ke</th>
+                                <th class="week-day">Pe</th>
+                                <th class="week-day">Še</th>
+                                <th class="week-day">Se</th>
+                            </tr>
+                        </thead>
+                        <tbody class="month-body">
+                            <tr class="week">
+                                <td class="day holiday-day" title="Tarptautinė darbo diena">1</td>
+                                <td class="day">2</td>
+                                <td class="day">3</td>
+                                <td class="day">4</td>
+                                <td class="day">5</td>
+                                <td class="day">6</td>
+                                <td class="day holiday-day" title="Motinos diena">7</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">8</td>
+                                <td class="day">9</td>
+                                <td class="day">10</td>
+                                <td class="day">11</td>
+                                <td class="day">12</td>
+                                <td class="day">13</td>
+                                <td class="day">14</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">15</td>
+                                <td class="day">16</td>
+                                <td class="day">17</td>
+                                <td class="day">18</td>
+                                <td class="day">19</td>
+                                <td class="day">20</td>
+                                <td class="day">21</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">22</td>
+                                <td class="day">23</td>
+                                <td class="day">24</td>
+                                <td class="day">25</td>
+                                <td class="day">26</td>
+                                <td class="day">27</td>
+                                <td class="day">28</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">29</td>
+                                <td class="day">30</td>
+                                <td class="day">31</td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="month-footer">
+                    <p class="month-footer-text">05-01 <span class="text-green">Tarptautinė darbo diena</span></p>
+                    <p class="month-footer-text">05-07 <span class="text-green">Motinos diena</span></p>
+                </div>
+            </li>
+            <li class="month">
+                <div class="shadow">
+                    <table class="month-table">
+                        <caption class="month-name">Birželis</caption>
+                        <thead class="month-head">
+                            <tr class="week-days">
+                                <th class="week-day">Pr</th>
+                                <th class="week-day">An</th>
+                                <th class="week-day">Tr</th>
+                                <th class="week-day">Ke</th>
+                                <th class="week-day">Pe</th>
+                                <th class="week-day">Še</th>
+                                <th class="week-day">Se</th>
+                            </tr>
+                        </thead>
+                        <tbody class="month-body">
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day">1</td>
+                                <td class="day">2</td>
+                                <td class="day">3</td>
+                                <td class="day holiday-day" title="Tėvo diena">4</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">5</td>
+                                <td class="day">6</td>
+                                <td class="day">7</td>
+                                <td class="day">8</td>
+                                <td class="day">9</td>
+                                <td class="day">10</td>
+                                <td class="day">11</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">12</td>
+                                <td class="day">13</td>
+                                <td class="day">14</td>
+                                <td class="day">15</td>
+                                <td class="day">16</td>
+                                <td class="day">17</td>
+                                <td class="day">18</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">19</td>
+                                <td class="day">20</td>
+                                <td class="day">21</td>
+                                <td class="day">22</td>
+                                <td class="day">23</td>
+                                <td class="day holiday-day" title="Joninės">24</td>
+                                <td class="day">25</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">26</td>
+                                <td class="day">27</td>
+                                <td class="day">28</td>
+                                <td class="day">29</td>
+                                <td class="day">30</td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="month-footer">
+                    <p class="month-footer-text">06-04 <span class="text-green">Tėvo diena</span></p>
+                    <p class="month-footer-text">06-24 <span class="text-green">Joninės</span></p>
+                </div>
+            </li>
+
+            <li class="month">
+                <div class="shadow">
+                    <table class="month-table">
+                        <caption class="month-name">Liepa</caption>
+                        <thead class="month-head">
+                            <tr class="week-days">
+                                <th class="week-day">Pr</th>
+                                <th class="week-day">An</th>
+                                <th class="week-day">Tr</th>
+                                <th class="week-day">Ke</th>
+                                <th class="week-day">Pe</th>
+                                <th class="week-day">Še</th>
+                                <th class="week-day">Se</th>
+                            </tr>
+                        </thead>
+                        <tbody class="month-body">
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day">1</td>
+                                <td class="day">2</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">3</td>
+                                <td class="day">4</td>
+                                <td class="day">5</td>
+                                <td class="day holiday-day" title="Karaliaus Mindaugo karūnavimo diena">6</td>
+                                <td class="day">7</td>
+                                <td class="day">8</td>
+                                <td class="day">9</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">10</td>
+                                <td class="day">11</td>
+                                <td class="day">12</td>
+                                <td class="day">13</td>
+                                <td class="day">14</td>
+                                <td class="day">15</td>
+                                <td class="day">16</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">17</td>
+                                <td class="day">18</td>
+                                <td class="day">19</td>
+                                <td class="day">20</td>
+                                <td class="day">21</td>
+                                <td class="day">22</td>
+                                <td class="day">23</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">24</td>
+                                <td class="day">25</td>
+                                <td class="day">26</td>
+                                <td class="day">27</td>
+                                <td class="day">28</td>
+                                <td class="day">29</td>
+                                <td class="day">30</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">31</td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="month-footer">
+                    <p class="month-footer-text">07-06 <span class="text-green">Karaliaus Mindaugo karūnavimo diena</span></p>
+                </div>
+            </li>
+            <li class="month">
+                <div class="shadow">
+                    <table class="month-table">
+                        <caption class="month-name">Rugpjūtis</caption>
+                        <thead class="month-head">
+                            <tr class="week-days">
+                                <th class="week-day">Pr</th>
+                                <th class="week-day">An</th>
+                                <th class="week-day">Tr</th>
+                                <th class="week-day">Ke</th>
+                                <th class="week-day">Pe</th>
+                                <th class="week-day">Še</th>
+                                <th class="week-day">Se</th>
+                            </tr>
+                        </thead>
+                        <tbody class="month-body">
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day">1</td>
+                                <td class="day">2</td>
+                                <td class="day">3</td>
+                                <td class="day">4</td>
+                                <td class="day">5</td>
+                                <td class="day">6</td>
+                            <tr class="week">
+                                <td class="day">7</td>
+                                <td class="day">8</td>
+                                <td class="day">9</td>
+                                <td class="day">10</td>
+                                <td class="day">11</td>
+                                <td class="day">12</td>
+                                <td class="day">13</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">14</td>
+                                <td class="day holiday-day" title="Žolinė">15</td>
+                                <td class="day">16</td>
+                                <td class="day">17</td>
+                                <td class="day">18</td>
+                                <td class="day">19</td>
+                                <td class="day">20</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">21</td>
+                                <td class="day">22</td>
+                                <td class="day">23</td>
+                                <td class="day">24</td>
+                                <td class="day">25</td>
+                                <td class="day">26</td>
+                                <td class="day">27</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">28</td>
+                                <td class="day">29</td>
+                                <td class="day">30</td>
+                                <td class="day">31</td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="month-footer">
+                    <p class="month-footer-text">08-15 <span class="text-green">Žolinė</span></p>
+                </div>
+            </li>
+            <li class="month">
+                <div class="shadow">
+                    <table class="month-table">
+                        <caption class="month-name">Rugsėjis</caption>
+                        <thead class="month-head">
+                            <tr class="week-days">
+                                <th class="week-day">Pr</th>
+                                <th class="week-day">An</th>
+                                <th class="week-day">Tr</th>
+                                <th class="week-day">Ke</th>
+                                <th class="week-day">Pe</th>
+                                <th class="week-day">Še</th>
+                                <th class="week-day">Se</th>
+                            </tr>
+                        </thead>
+                        <tbody class="month-body">
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day">1</td>
+                                <td class="day">2</td>
+                                <td class="day">3</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">4</td>
+                                <td class="day">5</td>
+                                <td class="day">6</td>
+                                <td class="day">7</td>
+                                <td class="day">8</td>
+                                <td class="day">9</td>
+                                <td class="day">10</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">11</td>
+                                <td class="day">12</td>
+                                <td class="day">13</td>
+                                <td class="day">14</td>
+                                <td class="day">15</td>
+                                <td class="day">16</td>
+                                <td class="day">17</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">18</td>
+                                <td class="day">19</td>
+                                <td class="day">20</td>
+                                <td class="day">21</td>
+                                <td class="day">22</td>
+                                <td class="day">23</td>
+                                <td class="day">24</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">25</td>
+                                <td class="day">26</td>
+                                <td class="day">27</td>
+                                <td class="day">28</td>
+                                <td class="day">29</td>
+                                <td class="day">30</td>
+                                <td class="day"></td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="month-footer">
+                </div>
+            </li>
+            <li class="month">
+                <div class="shadow">
+                    <table class="month-table">
+                        <caption class="month-name">Spalis</caption>
+                        <thead class="month-head">
+                            <tr class="week-days">
+                                <th class="week-day">Pr</th>
+                                <th class="week-day">An</th>
+                                <th class="week-day">Tr</th>
+                                <th class="week-day">Ke</th>
+                                <th class="week-day">Pe</th>
+                                <th class="week-day">Še</th>
+                                <th class="week-day">Se</th>
+                            </tr>
+                        </thead>
+                        <tbody class="month-body">
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day">1</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">2</td>
+                                <td class="day">3</td>
+                                <td class="day">4</td>
+                                <td class="day">5</td>
+                                <td class="day">6</td>
+                                <td class="day">7</td>
+                                <td class="day">8</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">9</td>
+                                <td class="day">10</td>
+                                <td class="day">11</td>
+                                <td class="day">12</td>
+                                <td class="day">13</td>
+                                <td class="day">14</td>
+                                <td class="day">15</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">16</td>
+                                <td class="day">17</td>
+                                <td class="day">18</td>
+                                <td class="day">19</td>
+                                <td class="day">20</td>
+                                <td class="day">21</td>
+                                <td class="day">22</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">23</td>
+                                <td class="day">24</td>
+                                <td class="day">25</td>
+                                <td class="day">26</td>
+                                <td class="day">27</td>
+                                <td class="day">28</td>
+                                <td class="day">29</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">30</td>
+                                <td class="day">31</td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="month-footer">
+                </div>
+            </li>
+            <li class="month">
+                <div class="shadow">
+                    <table class="month-table">
+                        <caption class="month-name">Lapkritis</caption>
+                        <thead class="month-head">
+                            <tr class="week-days">
+                                <th class="week-day">Pr</th>
+                                <th class="week-day">An</th>
+                                <th class="week-day">Tr</th>
+                                <th class="week-day">Ke</th>
+                                <th class="week-day">Pe</th>
+                                <th class="week-day">Še</th>
+                                <th class="week-day">Se</th>
+                            </tr>
+                        </thead>
+                        <tbody class="month-body">
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day holiday-day" title="Visų šventųjų diena">1</td>
+                                <td class="day holiday-day" title="Vėlinės">2</td>
+                                <td class="day">3</td>
+                                <td class="day">4</td>
+                                <td class="day">5</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">6</td>
+                                <td class="day">7</td>
+                                <td class="day">8</td>
+                                <td class="day">9</td>
+                                <td class="day">10</td>
+                                <td class="day">11</td>
+                                <td class="day">12</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">13</td>
+                                <td class="day">14</td>
+                                <td class="day">15</td>
+                                <td class="day">16</td>
+                                <td class="day">17</td>
+                                <td class="day">18</td>
+                                <td class="day">19</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">20</td>
+                                <td class="day">21</td>
+                                <td class="day">22</td>
+                                <td class="day">23</td>
+                                <td class="day">24</td>
+                                <td class="day">25</td>
+                                <td class="day">26</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">27</td>
+                                <td class="day">28</td>
+                                <td class="day">29</td>
+                                <td class="day">30</td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="month-footer">
+                    <p class="month-footer-text">11-01 <span class="text-green">Visų šventųjų diena</span></p>
+                    <p class="month-footer-text">11-02 <span class="text-green">Vėlinės</span></p>
+                </div>
+            </li>
+            <li class="month">
+                <div class="shadow">
+                    <table class="month-table">
+                        <caption class="month-name">Gruodis</caption>
+                        <thead class="month-head">
+                            <tr class="week-days">
+                                <th class="week-day">Pr</th>
+                                <th class="week-day">An</th>
+                                <th class="week-day">Tr</th>
+                                <th class="week-day">Ke</th>
+                                <th class="week-day">Pe</th>
+                                <th class="week-day">Še</th>
+                                <th class="week-day">Se</th>
+                            </tr>
+                        </thead>
+                        <tbody class="month-body">
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day">1</td>
+                                <td class="day">2</td>
+                                <td class="day">3</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">4</td>
+                                <td class="day">5</td>
+                                <td class="day">6</td>
+                                <td class="day">7</td>
+                                <td class="day">8</td>
+                                <td class="day">9</td>
+                                <td class="day">10</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">11</td>
+                                <td class="day">12</td>
+                                <td class="day">13</td>
+                                <td class="day">14</td>
+                                <td class="day">15</td>
+                                <td class="day">16</td>
+                                <td class="day">17</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day">18</td>
+                                <td class="day">19</td>
+                                <td class="day">20</td>
+                                <td class="day">21</td>
+                                <td class="day">22</td>
+                                <td class="day">23</td>
+                                <td class="day holiday-day" title="Kūčios">24</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day holiday-day" title="Kalėdos">25</td>
+                                <td class="day holiday-day" title="Šv. Kalėdų antroji diena">26</td>
+                                <td class="day">27</td>
+                                <td class="day">28</td>
+                                <td class="day">29</td>
+                                <td class="day">30</td>
+                                <td class="day">31</td>
+                            </tr>
+                            <tr class="week">
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                                <td class="day"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="month-footer">
+                    <p class="month-footer-text">12-24 <span class="text-green">Kūčios</span></p>
+                    <p class="month-footer-text">12-25 <span class="text-green">Kalėdos</span></p>
+                    <p class="month-footer-text">12-26 <span class="text-green">Šv. Kalėdų antroji diena</span></p>
+                </div>
+            </li>
+
+        </ol>
+
+
+    </main>
+
+</body>
+
+</html>

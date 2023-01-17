@@ -1,0 +1,114 @@
+body {
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0 1em;
+    color: #666666;
+    background-color: #F8F6ED;
+    text-align: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.title {
+    margin: 1.5em;
+    font-size: 1.6rem;
+}
+
+.calendar {
+    display: flex;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 18px;
+    max-width: 1006px;
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+
+.shadow {
+    box-shadow: 1px 1px 13px rgba(0, 0, 0, 0.1);
+}
+
+.month {
+    width: 314px;
+    padding-bottom: 1rem;
+}
+
+.month-table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.month-name {
+    height: 38px;
+    border-radius: 2px 2px 0 0;
+    background-color: #51B63E;
+    color: white;
+    font-size: 1.3rem;
+    line-height: 38px;
+}
+
+.month-body {
+    background-color: white;
+}
+
+.week-days {
+    background-color: #51B63E;
+    color: white;
+}
+
+.week-day {
+    padding-bottom: 0.5em;
+    font-size: 0.9rem;
+    font-weight: normal;
+}
+
+.day {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+}
+
+.current-day {
+    background-color: #32B13D;
+    color: white;
+}
+
+.holiday-day {
+    background-color: #FBE9E6;
+    color: #F70C41;
+}
+
+.celeb-working-day {
+    background-color: #F5F5F5;
+}
+
+.day:last-child {
+    color: #F70C41;
+}
+
+.month-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 0.9em;
+    margin-top: 1rem;
+}
+
+.month-footer-text {
+    padding: 0 0.5em;
+    margin: 0.2em 0;
+    text-align: left;
+    border-left: 5px solid #FBE9E6;
+}
+
+.border-grey {
+    border-color: #EDEDED;
+}
+
+.text-green {
+    color: #206750;
+}
