@@ -1,0 +1,65 @@
+body {
+  background-color: #363636;
+  font-size: 1.5rem;
+}
+.container {
+  margin: auto;
+  width: fit-content;
+}
+.box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 300px;
+}
+iframe {
+  border: 0;
+}
+pre {
+  width: 400px;
+  height: 310px;
+  font-size: 0.6em;
+  line-height: 1em;
+  color: white;
+  overflow: scroll;
+  background-color: #1f221e;
+}
+
+a {
+  color: #2974ed;
+  font-size: 0.8em;
+}
+a:hover,
+a:focus {
+  color: #0fb815;
+}
+h1 {
+  color: orange;
+}
+ul {
+  color: white;
+  margin-bottom: 1em;
+  padding: 1em 1em;
+}
+button {
+  color: orange;
+  background-color: transparent;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: underline;
+}
+button:hover,
+button:focus {
+  color: #0fb815;
+}
+.description,
+.score {
+  font-size: 0.6em;
+  margin: 1em 0 0;
+  padding: 0;
+}
+.description {
+  color: #a08e3e;
+}
