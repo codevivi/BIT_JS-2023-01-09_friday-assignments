@@ -15,11 +15,9 @@
                 href="https://github.com/codevivi/BIT_JS-2023-01-09_friday-assignments/tree/master/2023-01-20-Fr_css-battle">GitHub
                 files</a>
             <h1>Css battle solutions</h1>
-            <h2 id="title">Battle 115 - Droplet</h2>
+            <h2 id="title"></h2>
             <div class="box">
-                <iframe src="battle-115-1.html" height="300" width="400"
-                    title="Iframe
-                    Example">
+                <iframe src="battle-115-1.html" height="300" width="400">
                 </iframe>
                 <pre>
                     <code></code>
@@ -95,7 +93,6 @@
             if (e.target.dataset.src) {
                 code.innerHTML = '';
                 frame.src = e.target.dataset.src;
-                title.textContent = e.target.dataset.title;
                 location.hash = 'body';
                 showCode();
             }
@@ -104,6 +101,7 @@
             const insideFrame = frame.contentWindow || frame.contentDocument;
             if (insideFrame) {
                 setTimeout(() => { //probably not the best idea but otherwise need to click twice to update code..
+                    title.textContent = insideFrame.document.title;
                     let insideFrameHtml = insideFrame.document.querySelector('body').innerHTML;
                     insideFrameHtml.split()
                     code.appendChild(document.createTextNode(substring(insideFrameHtml)));
