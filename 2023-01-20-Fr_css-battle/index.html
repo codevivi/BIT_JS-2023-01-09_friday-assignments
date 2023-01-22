@@ -8,16 +8,17 @@
         <title>Css battle solutions</title>
         <link rel="stylesheet" href="index.css">
     </head>
-    <body>
+
+    <body id="body">
         <div class="container">
-            <h1>Css battle solutions</h1>
             <a
                 href="https://github.com/codevivi/BIT_JS-2023-01-09_friday-assignments/tree/master/2023-01-20-Fr_css-battle">GitHub
                 files</a>
+            <h1>Css battle solutions</h1>
+            <h2 id="title">Battle 115 - Droplet</h2>
             <div class="box">
-                <iframe
-                    src="battle-115-1.html"
-                    height="300" width="400" title="Iframe
+                <iframe src="battle-115-1.html" height="300" width="400"
+                    title="Iframe
                     Example">
                 </iframe>
                 <pre>
@@ -25,16 +26,15 @@
                 </pre>
             </div>
             <nav>
-
-
                 <ul>
                     <li>Battle 115 <a href="https://cssbattle.dev/play/115">Link
                             to
-                            battle</a>
+                            CSS battle</a>
                         <ul>
                             <li>
                                 <button type="button"
-                                    data-src="battle-115-1.html">First
+                                    data-src="battle-115-1.html"
+                                    data-title="Battle 115 - Droplet">First
                                     solution</button>
                                 <p class="description">With gradients</p>
                                 <small class="score">Score: 606.9 (100% match)
@@ -44,7 +44,8 @@
                             </li>
                             <li>
                                 <button type="button"
-                                    data-src="battle-115-2.html">Second
+                                    data-src="battle-115-2.html"
+                                    data-title="Battle 115 - Droplet">Second
                                     solution</button>
                                 <p class="description">Without gradients</p>
                                 <small class="score">Score: 608.43 (100% match)
@@ -56,11 +57,11 @@
                     </li>
                     <li>Battle 137 <a href="https://cssbattle.dev/play/137">Link
                             to
-                            battle</a>
+                            CSS battle</a>
                         <ul>
                             <li>
-                                <button type="button"
-                                    data-src="battle-137.html">Solution</button>
+                                <button type="button" data-src="battle-137.html"
+                                    data-title="Battle 137 - Elbow">Solution</button>
                                 <small class="score">Score: 677.64 (100% match)
                                     (172 chars);
                                     <em>(minified version)</em></small>
@@ -69,11 +70,11 @@
                     </li>
                     <li>Battle 116 <a href="https://cssbattle.dev/play/116">Link
                             to
-                            battle</a>
+                            CSS battle</a>
                         <ul>
                             <li>
-                                <button type="button"
-                                    data-src="battle-116.html">Solution</button>
+                                <button type="button" data-src="battle-116.html"
+                                    data-title="Battle 116 - Headphones">Solution</button>
                                 <small class="score">Score: 609.18 (100% match)
                                     (396 chars)
                                     <em>(minified version)</em></small>
@@ -84,39 +85,42 @@
             </nav>
         </div>
         <script>
-            const nav = document.querySelector('nav');
-            const frame = document.querySelector('iframe');
-            const code = document.querySelector('code');
-            showCode();
-          
-                nav.addEventListener('click', (e)=> {
-                    if(e.target.dataset.src) {
-                        code.innerHTML = '';
-                        frame.src = e.target.dataset.src;
-                        showCode();
-                    }
-                })
-                function showCode() {
-                    const insideFrame = frame.contentWindow || frame.contentDocument;
-                        if(insideFrame) {
-                            setTimeout(()=> { //probably not the best idea but otherwise need to click twice to update code..
-                            let insideFrameHtml = insideFrame.document.querySelector('body').innerHTML;
-                            insideFrameHtml.split()
-                            code.appendChild(document.createTextNode(substring(insideFrameHtml)));
-                            }, 1000);
-                        }
-                }
-                function substring(str) {
-                    const start = "CODE STARTS -->";
-                    const end = "<!-- ENDS CSS";
-                    const startIndex = str.indexOf(start);
-                    const endIndex = str.indexOf(end);
-                    if(startIndex !== -1 && endIndex !== -1) {
-                        return str.substring(startIndex + start.length, endIndex);
-                    }
-                    return '';
-                }
-        </script>
+        const nav = document.querySelector('nav');
+        const frame = document.querySelector('iframe');
+        const code = document.querySelector('code');
+        const title = document.querySelector('#title');
+        showCode();
+
+        nav.addEventListener('click', (e) => {
+            if (e.target.dataset.src) {
+                code.innerHTML = '';
+                frame.src = e.target.dataset.src;
+                title.textContent = e.target.dataset.title;
+                location.hash = 'body';
+                showCode();
+            }
+        })
+        function showCode() {
+            const insideFrame = frame.contentWindow || frame.contentDocument;
+            if (insideFrame) {
+                setTimeout(() => { //probably not the best idea but otherwise need to click twice to update code..
+                    let insideFrameHtml = insideFrame.document.querySelector('body').innerHTML;
+                    insideFrameHtml.split()
+                    code.appendChild(document.createTextNode(substring(insideFrameHtml)));
+                }, 1000);
+            }
+        }
+        function substring(str) {
+            const start = "CODE STARTS -->";
+            const end = "<!-- ENDS CSS";
+            const startIndex = str.indexOf(start);
+            const endIndex = str.indexOf(end);
+            if (startIndex !== -1 && endIndex !== -1) {
+                return str.substring(startIndex + start.length, endIndex);
+            }
+            return '';
+        }
+    </script>
     </body>
 
 </html>
