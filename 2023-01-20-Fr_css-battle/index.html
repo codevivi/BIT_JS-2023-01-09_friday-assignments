@@ -5,10 +5,11 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+        <title>Css battle solutions</title>
+        <meta http-equiv="Cache-Control" content="no-cache, no-store,
+            must-revalidate"/>
         <meta http-equiv="Pragma" content="no-cache"/>
         <meta http-equiv="Expires" content="0"/>
-        <title>Css battle solutions</title>
         <link rel="stylesheet" href="index.css">
     </head>
 
@@ -34,8 +35,7 @@
                         <ul>
                             <li>
                                 <button type="button"
-                                    data-src="battle-115-1.html"
-                                    data-title="Battle 115 - Droplet">First
+                                    data-src="battle-115-1.html">First
                                     solution</button>
                                 <p class="description">With gradients</p>
                                 <small class="score">Score: 606.9 (100% match)
@@ -45,8 +45,7 @@
                             </li>
                             <li>
                                 <button type="button"
-                                    data-src="battle-115-2.html"
-                                    data-title="Battle 115 - Droplet">Second
+                                    data-src="battle-115-2.html">Second
                                     solution</button>
                                 <p class="description">Without gradients</p>
                                 <small class="score">Score: 608.43 (100% match)
@@ -61,8 +60,8 @@
                             CSS battle</a>
                         <ul>
                             <li>
-                                <button type="button" data-src="battle-137.html"
-                                    data-title="Battle 137 - Elbow">Solution</button>
+                                <button type="button"
+                                    data-src="battle-137.html">Solution</button>
                                 <small class="score">Score: 677.64 (100% match)
                                     (172 chars);
                                     <em>(minified version)</em></small>
@@ -74,8 +73,8 @@
                             CSS battle</a>
                         <ul>
                             <li>
-                                <button type="button" data-src="battle-116.html"
-                                    data-title="Battle 116 - Headphones">Solution</button>
+                                <button type="button"
+                                    data-src="battle-116.html">Solution</button>
                                 <small class="score">Score: 609.18 (100% match)
                                     (396 chars)
                                     <em>(minified version)</em></small>
@@ -90,27 +89,29 @@
         const frame = document.querySelector('iframe');
         const code = document.querySelector('code');
         const title = document.querySelector('#title');
-        showCode();
 
         nav.addEventListener('click', (e) => {
             if (e.target.dataset.src) {
                 code.innerHTML = '';
                 frame.src = e.target.dataset.src;
                 location.hash = 'body';
-                showCode();
             }
         })
-        function showCode() {
+      frame.addEventListener('load', showCode) ;
+
+         function showCode() {
+                code.innerHTML = '';
+            console.log(frame.src);
             const insideFrame = frame.contentWindow || frame.contentDocument;
             if (insideFrame) {
-                setTimeout(() => { //probably not the best idea but otherwise need to click twice to update code..
                     title.textContent = insideFrame.document.title;
                     let insideFrameHtml = insideFrame.document.querySelector('body').innerHTML;
                     insideFrameHtml.split()
                     code.appendChild(document.createTextNode(substring(insideFrameHtml)));
-                }, 1000);
             }
         }
+
+
         function substring(str) {
             const start = "CODE STARTS -->";
             const end = "<!-- ENDS CSS";
